@@ -15,15 +15,15 @@ public class LoginTest {
         {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
+            driver.get("https://www.demo.guru99.com/V4/index.php");
         }
         @AfterTest
         public void terminate() {
-        //driver.quit();
+        driver.quit();
         }
 
         @Test
         public void loginFailedByUserID() {
-            driver.get("https://www.demo.guru99.com/V4/index.php");
 
             driver.findElement(By.name("uid")).sendKeys("octo123456");
             driver.findElement(By.name("password")).sendKeys("EzezYju");
@@ -32,7 +32,7 @@ public class LoginTest {
         }
         @Test
         public void loginSuccessfully() {
-            driver.get("https://www.demo.guru99.com/V4/index.php");
+
 
             driver.findElement(By.name("uid")).sendKeys("mngr473211");
             driver.findElement(By.name("password")).sendKeys("EzezYju");
@@ -41,7 +41,7 @@ public class LoginTest {
         }
         @Test
         public void loginFailedByPassword() {
-            driver.get("https://www.demo.guru99.com/V4/index.php");
+
 
             driver.findElement(By.name("uid")).sendKeys("mngr473211");
             driver.findElement(By.name("password")).sendKeys("octo123456");
@@ -49,7 +49,7 @@ public class LoginTest {
         }
         @Test
         public void loginFailedByUSerID_and_password() {
-            driver.get("https://www.demo.guru99.com/V4/index.php");
+
 
             driver.findElement(By.name("uid")).sendKeys("octo147258");
             driver.findElement(By.name("password")).sendKeys("octo123456");
@@ -57,7 +57,7 @@ public class LoginTest {
         }
         @Test
         public void Reset() {
-            driver.get("https://www.demo.guru99.com/V4/index.php");
+
 
             driver.findElement(By.name("uid")).sendKeys("octo147258");
             driver.findElement(By.name("password")).sendKeys("octo123456");
