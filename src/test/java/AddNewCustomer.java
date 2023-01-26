@@ -27,7 +27,7 @@ public class AddNewCustomer {
     }
     @AfterTest
     public void terminate() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
