@@ -1,0 +1,8 @@
+<suite name="Testing Google Apps">
+    <test name="Regression">
+        <classes>
+            <class name="AddNewCustomer"/>
+            <class name = "LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
