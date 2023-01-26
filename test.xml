@@ -1,5 +1,5 @@
-<suite name="Testing Google Apps">
-    <test name="Regression">
+<suite name="Testing GuruBank">
+    <test name="automated">
         <classes>
             <class name="AddNewCustomer"/>
             <class name = "LoginTest"/>
