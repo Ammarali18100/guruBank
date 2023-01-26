@@ -4,5 +4,5 @@
             <class name="AddNewCustomer"/>
             <class name = "LoginTest"/>
         </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+</suite>
