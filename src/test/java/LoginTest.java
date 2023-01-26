@@ -18,7 +18,7 @@ public class LoginTest {
         }
         @AfterTest
         public void terminate() {
-        //driver.quit();
+        driver.quit();
         }
 
         @Test
